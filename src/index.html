@@ -1,12 +1,126 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>work</title>
+    <title>Bootstrap w/ Webpack</title>
 </head>
 
 <body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Бренд</a>
+                <button class="navbar-toggler btn-rounded" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="#main">Главнаяя</a>
+                        <a class="nav-link" href="#catalog">Категории</a>
+                        <a class="nav-link" href="#">Цены</a>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-rounded" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                    Звонок
+                </button>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                    <ul class="navbar-nav"> 
+                        <li><a class="fs-2 nav-link active" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Главнаяя</a></li>
+                        <li><a class="fs-2 nav-link" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Категории</a></li>
+                        <li><a class="fs-2 nav-link" href="#" data-bs-dismiss="offcanvas" aria-label="Close">Цены</a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="vh-100" id="main">
+        <div>
+            <video autoplay muted loop class="position-absolute top-0 left-0 w-100 vh-100 z-n1 object-fit-cover">
+                <source src="assets/video/mainBg.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="container d-flex align-items-end h-50 w-75">
+            <div>
+                <p class="text-light">
+                    <span class="h1">Купить</span>
+                    <span class="h1 text-danger"> товар </span>
+                    <span class="h1"> с доставкой</span>
+                </p>
+                <p class="text-light">
+                    <span class="h2">Официальный поставщик </span>
+                    <span class="h2 text-danger"> товаров </span>
+                    <span class="h2"> в стране! </span>
+                </p>
+            </div>
+        </div>
+
+        <div class="container d-flex flex-wrap gap-5 justify-content-between align-items-end h-25 w-75">
+            <button class="btn btn-secondary btn-rounded">Заказать звонок</button>
+            <p class="text-light">Lorem ipsum<br/> sit amet.</p>
+        </div>
+
+    </main>
+
+    <section class="container-fluid py-2 bg-dark" id="catalog">
+        <div>
+            <p class="h1 text-light text-center">Каталог</p>
+        </div>
+    </section>
+
+    <section class="container-fluid" style=" margin-top: 30px; margin-bottom: 30px;">
+
+        <div class="container d-flex gap-5 flex-wrap">
+            <div class="card shadow-lg" style="width: 24rem;">
+                <img src="assets/images/image.webp" class="card-img-top" alt="card image">
+                <div class="card-body">
+                    <h5 class="card-title">Товар 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat numquam
+                        perspiciatis eaque dolorum voluptate sapiente, minus nesciunt ipsum sunt!</p>
+                    <ul>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <button class="btn btn-primary btn-rounded">Ссылка карточки</button>
+                </div>
+            </div>
+
+            <div class="card shadow-lg" style="width: 24rem;">
+                <img src="assets/images/image.webp" class="card-img-top" alt="card image">
+                <div class="card-body">
+                    <h5 class="card-title">Товар 1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error placeat numquam
+                        perspiciatis eaque dolorum voluptate sapiente, minus nesciunt ipsum sunt!</p>
+                    <ul>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor.</li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <button class="btn btn-primary btn-rounded">Ссылка карточки</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
 </body>
 

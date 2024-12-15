@@ -1,2 +1,11 @@
+$secondary: #6f42c1;
+
 @import "~bootstrap/scss/bootstrap";
 
+.btn-rounded {
+    border-top-left-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 30px;
+}
