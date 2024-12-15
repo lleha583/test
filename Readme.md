@@ -8,3 +8,5 @@
 ### Запустите команду по установке npm пакетов `npm i` либо `npm install`
 
 ### Потом запустите проект `npm run start`
+
+### для просмотра можно перейти по ссылке `https://lleha583.github.io/test/dist/index`
